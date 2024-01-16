@@ -1,0 +1,15 @@
+cleanTone = audioread("CleanTone.wav");
+noisyTone = audioread("NoisyTone.wav");
+x = audioread("Filtered_a_0.wav");
+y = audioread("Filtered_a_0_25.wav");
+z = audioread("Filtered_a_0_9.wav");
+figure(1);
+plot(cleanTone(1:1000));
+figure(2);
+plot(noisyTone(1:1000));
+figure(3);
+plot(x(1:1000));
+figure(4);
+plot(y(1:1000));
+figure(5);
+plot(z(1:1000));
